@@ -1,0 +1,29 @@
+<!-- <button catchtap='btn'>aaaaaaaaa</button> -->
+<view class='top_txt'>请为您喜爱的油画点赞(可以多选)</view>
+<view class='bobo'>
+  <view class='bo' style='margin-right: 2rpx'>
+    <block wx:for='{{arr_l}}' wx:key=''>
+      <view class='for_bo'>
+        <image class='img' mode="widthFix" src='{{item.img}}'></image>
+
+        <view class='name' wx:if='{{item.name}}' style="">图{{item.name}}</view>
+        <view class='like_bo' bindtap='zan' data-id='{{item.id}}'>
+          <image class='like' src="{{item.status=='1'?'../../img/zan2.png':'../../img/zan1.png'}}" mode="widthFix"></image>
+          <view class='zan' wx:if='{{item.zan&&list_num!=1}}' style="{{list_num=='1'?'display: none':'display: block'}}">{{item.zan}}</view>
+        </view>
+      </view>
+    </block>
+  </view>
+  <view class='bo' style=' margin-left: 2rpx'>
+    <block wx:for='{{arr_r}}' wx:key=''>
+      <view class='for_bo'>
+        <image class='img' mode="widthFix" src='{{item.img}}'></image>
+        <view class='name' wx:if='{{item.name}}' style="">图{{item.name}}</view>
+        <view class='like_bo' bindtap='zan' data-id='{{item.id}}'>
+          <image class='like' src="{{item.status=='1'?'../../img/zan2.png':'../../img/zan1.png'}}" mode="widthFix"></image>
+          <view class='zan' wx:if='{{item.zan&&list_num!=1}}' style="{{list_num=='1'?'display: none':'display: block'}}">{{item.zan}}</view>
+        </view>
+      </view>
+    </block>
+  </view>
+</view>

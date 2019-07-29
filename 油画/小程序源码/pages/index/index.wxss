@@ -1,0 +1,54 @@
+.bobo{
+  background: #f0f0ff;
+  display: flex;
+  padding-bottom: 20rpx
+  
+}
+.top_txt{
+  position: relative;
+  top: 0;
+  width: 100%;
+  height: 80rpx;
+  line-height: 80rpx;
+  font-size: 32rpx;
+  text-align: center;
+  background: wheat;
+  color: white;
+}
+.bobo .bo{
+  flex: 1;
+}
+.bobo .bo .for_bo{
+ border: 1rpx solid rgb(212, 212, 212);
+  margin-top: 20rpx;
+  text-align: center;
+  padding-bottom: 60rpx;
+  position: relative;
+}
+.bobo .bo .for_bo .img{
+  width:100%;
+ 
+}
+.like{
+  width: 40rpx;
+  padding-right: 10rpx;
+ position: absolute;
+ left: 30rpx;
+ top: 20rpx;
+}
+.bobo .bo .for_bo .like_bo{
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 80rpx;
+  z-index: 99;
+  bottom: 0;
+}
+.name{
+  margin-left: 20rpx;
+}
+.zan{
+  position: absolute;
+  right: 30rpx;
+ top: 20rpx;
+}
